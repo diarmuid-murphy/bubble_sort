@@ -1,4 +1,10 @@
-def bubble_sort
+def bubble_sort(numbers)
+	first = 0
+	second = first + 1
+	container = 0
+	last = numbers.length - 1
+	count = 0
+	
 	
 end
 
