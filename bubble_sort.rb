@@ -6,16 +6,21 @@ def bubble_sort(numbers)
 	count = 0
 	
 	while last != 0 do
-		if numbers[first] <= numbers[second]
+		if (numbers[first] < numbers[second]) do
 			first += 1
-		elsif numbers[first] > numbers[second]
+		elsif numbers[first] > numbers[second] do
 			container = numbers[first]
 			numbers[first] = numbers[second]
 			numbers[second] = container
+			first += 1
+		else
+			first += 1
 		end
+		
+		last -= 1
 	end
 	
-	puts numbers
+	puts numbers.inspect
 end
 
 bubble_sort([4,3,78,2,0,2]) # should return [0,2,2,3,4,78]
