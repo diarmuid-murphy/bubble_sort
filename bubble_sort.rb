@@ -1,26 +1,13 @@
 def bubble_sort(numbers)
-	first = 0
-	second = first + 1
-	container = 0
-	last = numbers.length - 1
-	count = 0
-	
-	while last != 0 do
-		if (numbers[first] < numbers[second]) do
-			first += 1
-		elsif numbers[first] > numbers[second] do
-			container = numbers[first]
-			numbers[first] = numbers[second]
-			numbers[second] = container
-			first += 1
-		else
-			first += 1
+	n = numbers.length
+	swapped = false
+
+	while swapped == false do
+		for i in 0..n-1
+
 		end
-		
-		last -= 1
+		swapped = true # leave this in for testing until propetly implemented.
 	end
-	
-	puts numbers.inspect
 end
 
 bubble_sort([4,3,78,2,0,2]) # should return [0,2,2,3,4,78]
