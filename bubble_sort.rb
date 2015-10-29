@@ -1,6 +1,5 @@
 def bubble_sort(numbers)
 	n = numbers.length
-	swapped = true
 
 	(n-1).times do
 		for i in 1..n-1
